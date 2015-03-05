@@ -16,8 +16,7 @@
 
         function setTitle($new_title)
         {
-
-                $this->title = $new_title;
+            $this->title = $new_title;
         }
 
         function setArtist($new_artist)
@@ -27,7 +26,7 @@
 
         function setPrice($new_price)
         {
-            $int_price = (integer) $new_price;
+            $int_price = (float) $new_price;
             if ($int_price != 0) {
                 $this->price = $int_price;
             }
@@ -35,7 +34,7 @@
 
         function setCoverArt($newCover_art)
         {
-                $this->cover_art = $newCover_art;
+            $this->cover_art = $newCover_art;
         }
 
         function getTitle()
